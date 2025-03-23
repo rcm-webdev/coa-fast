@@ -8,7 +8,7 @@ function Footer() {
         <Image src={Logo} alt="logo" className="w-14 h-14" />
 
         <p className="font-semibold">
-          Technicians Roadmap
+          Technicians Bootcamp
           <br />
           <span className="flex gap-1 items-center ">
             <span>Made with</span>{" "}
