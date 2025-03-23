@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.svg";
+import Button from "./Button";
 
 function Navbar() {
   return (
@@ -12,11 +13,14 @@ function Navbar() {
         >
           <Image src={Logo} alt="Logo" className="h-10 w-10 " />
           <span className="hidden md:block text-base-content">
-            Technicians Roadmap
+            Technicians Bootcamp
           </span>
         </Link>
       </div>
-      <div className="flex gap-2">{/* <Button /> */}</div>
+      <div className="flex gap-2">
+        {" "}
+        <Button />{" "}
+      </div>
     </div>
   );
 }
