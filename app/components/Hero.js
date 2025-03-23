@@ -15,9 +15,7 @@ function Hero() {
         />
         <div className="space-y-6">
           <div className="flex gap-3 items-center">
-            <h1 className="text-3xl font-bold">
-              Ophthalmic Technicians Roadmap
-            </h1>
+            <h1 className="text-3xl font-bold">Technicians Bootcamp</h1>
             <Image
               src={Glasses}
               alt="Glasses-icon"
