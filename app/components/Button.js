@@ -20,7 +20,12 @@ async function Button() {
     return (
       <div className="dropdown dropdown-end">
         <div tabIndex={0} role="button" className="btn m-1">
-          Welcome back - {initials || "Friend"}
+          <div className="avatar avatar-placeholder">
+            <div className="bg-neutral text-neutral-content w-12 rounded-full">
+              <span>{initials}</span>
+            </div>
+          </div>
+          <span>{session.user.name || "Friend"}</span>
         </div>
         <ul
           tabIndex={0}
