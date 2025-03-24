@@ -10,8 +10,8 @@ function CourseSidebar() {
           {/* Collapse Title */}
           <div className="collapse-title flex justify-between items-center">
             <div className="relative inline-block">
-              <span className="relative z-10 text-xl font-bold ">
-                Section 1
+              <span className="relative z-10 text-xl font-extrabold ">
+                1. The Basics
               </span>
               <span className="absolute inset-x-0 bottom-1 h-1.5 bg-primary/60 z-0 transition-all duration-300 ease-in-out group-hover:h-full"></span>
             </div>
@@ -20,9 +20,9 @@ function CourseSidebar() {
           {/* Collapse Content */}
           <div className="collapse-content">
             <ul className="list-disc pl-5">
-              <li className="py-1">Lesson 1</li>
-              <li className="py-1">Lesson 2</li>
-              <li className="py-1">Lesson 3</li>
+              <li className="py-1">Charts</li>
+              <li className="py-1">Exam</li>
+              <li className="py-1">Workflow</li>
             </ul>
           </div>
         </div>
@@ -36,8 +36,8 @@ function CourseSidebar() {
           {/* Collapse Title */}
           <div className="collapse-title flex justify-between items-center">
             <div className="relative inline-block">
-              <span className="relative z-10 text-xl font-bold ">
-                Section 2
+              <span className="relative z-10 text-xl font-extrabold ">
+                2. Optometry
               </span>
               <span className="absolute inset-x-0 bottom-1 h-1.5 bg-secondary/60 z-0 transition-all duration-300 ease-in-out group-hover:h-full"></span>
             </div>
@@ -46,9 +46,9 @@ function CourseSidebar() {
           {/* Collapse Content */}
           <div className="collapse-content">
             <ul className="list-disc pl-5">
-              <li className="py-1">Lesson 1</li>
-              <li className="py-1">Lesson 2</li>
-              <li className="py-1">Lesson 3</li>
+              <li className="py-1">Routine Visits</li>
+              <li className="py-1">Medical Longs</li>
+              <li className="py-1">Post ops</li>
             </ul>
           </div>
         </div>
@@ -62,8 +62,8 @@ function CourseSidebar() {
           {/* Collapse Title */}
           <div className="collapse-title flex justify-between items-center">
             <div className="relative inline-block">
-              <span className="relative z-10 text-xl font-bold ">
-                Section 3
+              <span className="relative z-10 text-xl font-extrabold ">
+                3. Ophthalmology
               </span>
               <span className="absolute inset-x-0 bottom-1 h-1.5 bg-accent/60 z-0 transition-all duration-300 ease-in-out group-hover:h-full"></span>
             </div>
@@ -72,9 +72,10 @@ function CourseSidebar() {
           {/* Collapse Content */}
           <div className="collapse-content">
             <ul className="list-disc pl-5">
-              <li className="py-1">Lesson 1</li>
-              <li className="py-1">Lesson 2</li>
-              <li className="py-1">Lesson 3</li>
+              <li className="py-1">Cornea</li>
+              <li className="py-1">Glaucoma</li>
+              <li className="py-1">Retina</li>
+              <li className="py-1">General</li>
             </ul>
           </div>
         </div>
