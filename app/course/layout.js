@@ -25,7 +25,7 @@ async function LayoutPrivate({ children }) {
         </div>
 
         {/* Scrollable Main Content */}
-        <div className="flex-1 overflow-y-auto bg-base-100">{children}</div>
+        <div className="flex-1 overflow-y-auto bg-base-300">{children}</div>
       </div>
     </div>
   );
