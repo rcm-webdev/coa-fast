@@ -29,7 +29,8 @@ async function Button() {
         </div>
         <ul
           tabIndex={0}
-          className="menu text-xl dropdown-content bg-base-300 rounded-box z-1 w-60 p-2 shadow-sm font-semibold"
+          className="menu text-xl dropdown-content bg-base-300 rounded-box z-1 w-60 p-2 shadow-[8px_8px_0px_var(--tw-shadow-color)] font-semibold"
+          style={{ "--tw-shadow-color": "rgba(184, 230, 254, 0.5)" }}
         >
           <li>
             <Link href={"/course"}>
