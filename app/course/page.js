@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import { auth } from "@/auth";
 
 async function Course() {
