@@ -15,7 +15,7 @@ function CourseNavbar() {
           </Link>
 
           {/* Progress Bar - hidden on small screens */}
-          <div className="join-item px-4 py-4 border-r hidden md:flex flex-col items-start">
+          <div className="join-item px-4 py-4 border-r hidden md:flex flex-col gap-2 items-start">
             <span className="text-sm text-bg-content">
               Course Progress (100%)
             </span>
@@ -35,7 +35,7 @@ function CourseNavbar() {
       </div>
 
       {/* Right side - user dropdown */}
-      <div className=" px-4 ">
+      <div className="join border-0 lg:border-l hover:bg-base-200 duration-200 py-6">
         <Button />
       </div>
     </div>

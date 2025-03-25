@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 function CourseSidebar() {
   return (
-    <div className="w-72 h-screen overflow-y-auto flex flex-col border-r bg-base-300 ">
+    <div className="w-96 lg:w-72 min-h-0 lg:h-screen overflow-y-auto flex flex-col border-r bg-base-300 ">
       {/* Section 1 */}
       <div className="join border-b">
         <div
@@ -72,10 +74,12 @@ function CourseSidebar() {
           {/* Collapse Content */}
           <div className="collapse-content">
             <ul className="list-disc pl-5">
-              <li className="py-1">Cornea</li>
-              <li className="py-1">Glaucoma</li>
-              <li className="py-1">Retina</li>
-              <li className="py-1">General</li>
+              <li className="py-1">
+                {" "}
+                <Link href={"/course/md/cornea"} className="link link-primary">
+                  Cornea
+                </Link>{" "}
+              </li>
             </ul>
           </div>
         </div>
