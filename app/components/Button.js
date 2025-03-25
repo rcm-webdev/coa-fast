@@ -18,18 +18,24 @@ async function Button() {
   if (session && session.user) {
     const initials = getInitials(session.user.name);
     return (
-      <div className="dropdown dropdown-end ">
-        <div tabIndex={0} role="button" className=" btn m-1">
+      <div className="dropdown dropdown-end mr-3 lg:mr-6 px-4 join-item ">
+        <div
+          tabIndex={0}
+          role="button"
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <div className="avatar avatar-placeholder">
-            <div className="bg-neutral text-neutral-content w-8 rounded-full">
-              <span className="text-xs">{initials}</span>
+            <div className="bg-secondary text-secondary-content w-8 rounded-full">
+              <span className="text-xs font-bold">{initials}</span>
             </div>
           </div>
-          <span className="text-lg">{session.user.name || "Friend"}</span>
+          <span className="text-xs lg:text-lg font-bold">
+            {session.user.name || "Friend"}
+          </span>
         </div>
         <ul
           tabIndex={0}
-          className="menu text-xl dropdown-content bg-base-300 rounded-box z-1 w-60 p-2 shadow-[8px_8px_0px_var(--tw-shadow-color)] font-semibold"
+          className="menu text-xl dropdown-content bg-base-300 rounded-box z-1 w-60 p-2 mt-7 shadow-[8px_8px_0px_var(--tw-shadow-color)] font-semibold"
           style={{ "--tw-shadow-color": "rgba(184, 230, 254, 0.5)" }}
         >
           <li>
