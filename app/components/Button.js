@@ -8,12 +8,17 @@ async function Button() {
   const session = await auth();
 
   const getInitials = (name) => {
+    if (!name || typeof name !== "string") {
+      return ""; // Return an empty string if name is invalid
+    }
     return name
-      .split(" ") // Split the name into parts
-      .slice(0, 2) // Take the first two parts of the name
-      .map((part) => part[0].toUpperCase()) // Get the first letter of each part and capitalize it
+      .split(" ")
+      .slice(0, 2)
+      .map((part) => part[0].toUpperCase())
       .join(""); // Join the letters back together
   };
+
+  console.log("Session:", session); // Debugging session object
 
   if (session && session.user) {
     const initials = getInitials(session.user.name);
