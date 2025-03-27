@@ -1,11 +1,12 @@
-import { auth } from "../../auth";
+"use client";
+
+import { useSession } from "next-auth/react";
 import { Logout } from "./Logout";
 import { SignIn } from "./SignIn";
-
 import Link from "next/link";
 
-async function Button() {
-  const session = await auth();
+function Button() {
+  const { data: session, status } = useSession();
 
   const getInitials = (name) => {
     if (!name || typeof name !== "string") {
@@ -18,12 +19,19 @@ async function Button() {
       .join(""); // Join the letters back together
   };
 
-  console.log("Session:", session); // Debugging session object
+  if (status === "loading") {
+    return (
+      <div>
+        <span className="loading loading-dots loading-lg"></span>{" "}
+        <span className="text-lg font-bold">Loading</span>
+      </div>
+    ); // Show a loading state while session is being fetched
+  }
 
   if (session && session.user) {
     const initials = getInitials(session.user.name);
     return (
-      <div className="dropdown dropdown-end mr-3 lg:mr-6 px-4 join-item ">
+      <div className="dropdown dropdown-end mr-3 lg:mr-6 px-4 join-item">
         <div
           tabIndex={0}
           role="button"
@@ -88,6 +96,7 @@ async function Button() {
       </div>
     );
   }
+
   return (
     <div>
       <SignIn />
